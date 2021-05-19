@@ -1,0 +1,185 @@
+/* @import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+* {
+  padding: 0rem;
+  margin: 0rem;
+  box-sizing: content-box;
+  font-family: "Audiowide", cursive;
+}
+
+html {
+  /* font-family: "Press Start 2P", sans-serif; */
+  font-family: "Audiowide", cursive;
+  box-sizing: content-box;
+  font-size: 62.5%;
+  background-color: rgb(49, 49, 49);
+  color: white;
+}
+
+h1 {
+  font-size: 4.6rem;
+}
+
+p,
+input,
+button {
+  font-size: 2.6rem;
+}
+
+button {
+  color: black;
+  background-color: white;
+  padding: 1.5rem 4rem;
+  margin: 2rem;
+  border: white;
+  animation: glow2 1s alternate infinite ease-in-out;
+}
+
+header {
+  min-height: 35vh;
+  border-bottom: solid 1rem white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  position: relative;
+  animation: glow2 1s alternate infinite ease-in-out;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  font-size: 7rem;
+  transform: translate(-50%, 50%);
+  background-color: white;
+  color: black;
+  width: 15rem;
+  text-align: center;
+  padding: 2rem;
+  animation: glow2 1s alternate infinite ease-in-out;
+}
+
+.range {
+  margin: 2rem;
+  flex: 1 1 20rem;
+
+  text-align: end;
+}
+
+header h1 {
+  flex: 20 1 20rem;
+  transform: translate(0, -150%);
+  animation: glow 1s alternate infinite ease-in-out;
+  text-align: center;
+}
+
+.again {
+  flex: 1 1 20rem;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0rem 0rem 1rem white;
+  }
+  to {
+    text-shadow: 0rem 0rem 2rem white;
+  }
+}
+
+@keyframes glow2 {
+  from {
+    box-shadow: 0rem 0rem 1rem white;
+  }
+  to {
+    box-shadow: 0rem 0rem 2rem white;
+  }
+}
+
+main {
+  margin: 2rem;
+  display: flex;
+  min-height: 65vh;
+}
+
+.left {
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  height: 75vh;
+  align-items: center;
+  justify-content: center;
+  /* transform: translate(0, -10%); */
+}
+
+.input {
+  width: 20%;
+  background-color: rgba(169, 169, 169, 0);
+  border: solid 0.3rem white;
+  padding: 4rem;
+  height: 1rem;
+  text-align: center;
+  color: white;
+  margin-bottom: 0rem;
+  font-size: 5rem;
+}
+
+.submit {
+  margin-top: rem;
+  margin-bottom: 10rem;
+}
+
+.right {
+  flex: 1 1;
+
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  height: 75vh;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  transform: translate(0, -10%);
+}
+
+@media (max-width: 1070px) {
+  header h1 {
+    transform: translate(0%, 0%);
+    margin-bottom: 5rem;
+  }
+  header {
+    min-height: 40vh;
+  }
+  main {
+    margin-top: 5rem;
+  }
+  html {
+    font-size: 60%;
+  }
+  .right {
+    height: 50vh;
+  }
+}
+@media (max-width: 450px) {
+  .right {
+    margin-top: 1.4rem;
+  }
+}
+
+@media (max-width: 350px) {
+  html {
+    font-size: 35%;
+  }
+  header {
+    margin-right: 0rem;
+  }
+  header {
+    width: 100%;
+    height: 40vh;
+  }
+  main {
+    width: 100%;
+  }
+}
