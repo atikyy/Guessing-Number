@@ -23,10 +23,12 @@ document.querySelector(".submit").addEventListener("click", () => {
       status.textContent = "📈 Too high";
       tries--;
       document.querySelector(".tries").textContent = tries;
+      document.querySelector(".input").value = null;
     } else {
       status.textContent = "📉 Too low";
       tries--;
       document.querySelector(".tries").textContent = tries;
+      document.querySelector(".input").value = null;
     }
   } else {
     status.textContent = "❌ Game Over";
